@@ -1,0 +1,198 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background: #dedede;
+	font-family: 'Helvetica', arial, sans-serif;
+	font-size: 15px;
+}
+
+p{
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+h3{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #aaa;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	color: #666;
+}
+
+.container{
+	max-width: 1080px;
+	margin: 20px auto;
+	background: #fff;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.header{
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+.menu {
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* Main */
+.kiri{
+	width: 250px;
+	border: 1px solid #dedede;
+	background: #e5e5e5;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+
+.tengah{
+	width: 500px;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+
+.tengah img{
+	max-width: 100%;
+	height: auto;
+}
+
+.tengah a{
+	font-weight: bold;
+}
+
+.kanan{
+	width: 250px;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+	background: red;
+}
+
+
+.kanan ul{
+	list-style-type: none;
+}
+.kanan ul li{
+	display: block;
+}
+.kanan ul li a{
+	display: block;
+	border-bottom: 1px solid #dedede;
+	margin-bottom: 10px;
+	padding: 10px 5px;
+}
+.kanan ul li a:hover{
+	color: orange;
+}
+
+.footer{
+	clear: both;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* untuk ukuran 1080px kebawah */
+@media screen and (max-width: 1080px)
+{
+	
+	.container
+	{
+		width: 100%;
+	}
+	.kiri
+	{
+		width: 25%;
+		background: yellow;
+	}
+	.tengah
+	{
+		width: 68%;
+		float: right;
+	}
+	
+	.kanan
+	{
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+		background: blue;
+	}
+}
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 700px)
+{
+	
+	.header, 
+	.footer
+	{
+		text-align: center;
+	}
+	.kiri
+	{
+		width: auto;
+		float: none;
+	}
+	
+	.tengah
+	{
+		width: auto;
+		float: none;
+	}
+	
+	.kanan
+	{
+		width: auto;
+		float: none;
+		background: green;
+	}
+
+}
+
+/* untuk ukuran layar 400px kebawah */
+@media screen and (max-width: 400px)
+{
+	
+	.header, 
+	.footer
+	{
+		text-align: center;
+	}
+	.kiri
+	{
+		width: auto;
+		float: none;
+	}
+	
+	.tengah
+	{
+		width: auto;
+		float: none;
+	}
+	
+	.kanan
+	{
+		width: auto;
+		float: none;
+		background: yellow;
+	}
+
+}
